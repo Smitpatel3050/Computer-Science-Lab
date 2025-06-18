@@ -1,0 +1,91 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1.5cm,right=1.5cm,top=1.8cm,bottom=1.8cm]{geometry}
+\usepackage{titlesec}
+\usepackage{paracol}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+% Fonts and formatting
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{blue}}{}{0em}{}[\titlerule]
+
+% Custom command
+\newcommand{\cvsection}[1]{\section*{\uppercase{#1}}}
+\newcommand{\cvitem}[2]{\textbf{#1:} #2\\}
+
+%--------------------------------------------------------------------------------
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Smit Patel}}\\
+    \smallskip
+    \href{mailto:smit.patel@example.com}{smit.patel@example.com} | +91 0000000000\\
+    B-303, Tulsivan Co.Op. HSG Society, Nr. 500 Quarter, GIDC, Ankleshwar, Bharuch – 393002\\
+    \href{https://github.com/smitpatel}{github.com/smitpatel} | \href{https://smitpatel.github.io/cs-portfolio}{smitpatel.github.io/cs-portfolio}
+\end{center}
+
+\vspace{0.5cm}
+
+\cvsection{Personal Details}
+\begin{tabular}{rl}
+\textbf{Date of Birth:} & 30 May 2005 \\
+\textbf{Nationality:} & Indian \\
+\textbf{Gender:} & Male \\
+\end{tabular}
+
+\vspace{0.5cm}
+
+\cvsection{Education}
+\begin{itemize}
+    \item \textbf{12th Higher Secondary School} – Gujarat Secondary and Higher Secondary Education Board (2021–2023)\\
+    Final Grade: 52.30\%
+    \item \textbf{10th Secondary School} – Gujarat Secondary and Higher Secondary Education Board (2020–2021)\\
+    Final Grade: 84.33\%
+\end{itemize}
+
+\vspace{0.5cm}
+
+\cvsection{Technical Skills}
+\begin{itemize}
+    \item Programming: Basic knowledge of \textbf{C, C++}
+    \item Web Technologies: Familiar with \textbf{HTML, CSS}
+    \item Tools: \textbf{Git, GitHub}, Microsoft Word, Excel, PowerPoint, Access
+    \item OS: Comfortable using \textbf{Windows 7 and above}
+\end{itemize}
+
+\vspace{0.5cm}
+
+\cvsection{Language Skills}
+\begin{itemize}
+    \item \textbf{Hindi} (Mother tongue)
+    \item \textbf{English}: B2 (Speaking), B1 (Listening, Reading, Writing)
+\end{itemize}
+
+\vspace{0.5cm}
+
+\cvsection{Digital and Soft Skills}
+\begin{itemize}
+    \item Social media proficiency: Facebook, WhatsApp, Twitter
+    \item Communication and interpersonal skills
+    \item Creativity, innovation, and forward thinking
+    \item Ability to focus and work with dedication over long periods
+    \item Strong collaboration and teamwork capabilities
+\end{itemize}
+
+\vspace{0.5cm}
+
+\cvsection{Additional Information}
+\begin{itemize}
+    \item Portfolio Website: \href{https://smitpatel.github.io/cs-portfolio}{smitpatel.github.io/cs-portfolio}
+    \item GitHub Repository: \href{https://github.com/smitpatel/cs-portfolio}{github.com/smitpatel/cs-portfolio}
+    \item Interests: Technology, Coding, Gaming, Digital Media
+\end{itemize}
+
+\end{document}
